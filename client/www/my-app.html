@@ -1,0 +1,14 @@
+<md-toolbar color="primary">
+    <a routerLink="">Welcome</a>
+    <a routerLink="help">Help</a>
+
+    <md-toolbar-row>
+     <button md-raised-button (click)="auth.login()" *ngIf="!auth.authenticated()"><i class="material-icons">person</i>Log In</button>
+    <button md-raised-button (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+    </md-toolbar-row>
+
+</md-toolbar>
+
+<main>
+    <router-outlet></router-outlet>
+</main>

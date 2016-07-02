@@ -1,0 +1,14 @@
+/**
+ * Created by ufk on 29/06/2016.
+ */
+
+module.exports = {
+    webServer: {
+        appBaseHref : "/"
+    },
+    auth0: {
+        apiKey: "<API_KEY>",
+        domain: "<DOMAIN>",
+        callbackUrl: "<CALLBACK_URL>"
+    }
+};

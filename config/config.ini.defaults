@@ -1,0 +1,17 @@
+[Server]
+IsProduction=false
+ServerHost=<HOST>
+
+[SslCert]
+CertificateFile=cert/<FILE>.crt
+PrivateKeyFile=cert/<FILE>.key
+
+[NewRelic]
+Licensekey=<LICENSE_KEY>
+AppName=<APP_NAME>
+AccountDomain=>DOMAIN>
+
+[WebServer]
+HttpsPort=10444
+ReadTimeout=5
+WriteTimeout=10

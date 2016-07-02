@@ -1,0 +1,12 @@
+myalcoholist-web.iml
+.idea
+config/*
+!config/*.defaults
+node_modules
+dist
+typings
+client/**/*.js
+client/**/*.js.map
+WebServer
+webpack-log
+cert/*
