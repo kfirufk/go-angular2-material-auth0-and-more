@@ -11,6 +11,7 @@ import (
 	"time"
 	"github.com/gorilla/mux"
 	"github.com/jingweno/negroni-gorelic"
+	"../cert"
 )
 
 var secureMiddleware *secure.Secure = secure.New(secure.Options{
@@ -56,6 +57,7 @@ func main() {
 		Handler: n,
 		ReadTimeout: time.Duration(config.CfgIni.ReadTimeout) * time.Second,
 		WriteTimeout: time.Duration(config.CfgIni.WriteTimeout) * time.Second,
+		TLSConfig: cert.TlsConfig,
 	}
 	err := srv.ListenAndServeTLS(config.CfgIni.CertificateFile,config.CfgIni.PrivateKeyFile)
 	if err != nil {

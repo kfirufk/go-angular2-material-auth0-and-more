@@ -12,6 +12,7 @@ const (
 type SslCert struct {
 	CertificateFile string
 	PrivateKeyFile string
+	OtherCertificates []string
 }
 
 type Server struct {

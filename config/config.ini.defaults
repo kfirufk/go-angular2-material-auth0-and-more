@@ -5,6 +5,7 @@ ServerHost=<HOST>
 [SslCert]
 CertificateFile=cert/<FILE>.crt
 PrivateKeyFile=cert/<FILE>.key
+OtherCertificates[]=<CERT_FILE_1>,[<CERT_FILE_2>....]
 
 [NewRelic]
 Licensekey=<LICENSE_KEY>
