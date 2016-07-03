@@ -11,6 +11,11 @@ import (
 var TlsConfig *tls.Config;
 
 func init() {
+	cert, err := tls.LoadX509KeyPair(config.CfgIni.CertificateFile,config.CfgIni.PrivateKeyFile)
+	if err != nil {
+		log.Fatalf("server: loadkeys: %s", err)
+
+	}
 	certpool := x509.NewCertPool()
 	for _, crFile := range config.CfgIni.OtherCertificates {
 		pem, err := ioutil.ReadFile(crFile)
@@ -23,6 +28,7 @@ func init() {
 	}
 
 	TlsConfig = &tls.Config{
+		Certificates: []tls.Certificate{cert},
 		ClientCAs:    certpool,
 	}
 	TlsConfig.BuildNameToCertificate()

@@ -97,6 +97,18 @@ after a succesfull login, the redirection for some reason works but provides err
 in order to work-around this problem, I created a wildcard route so every invalid route will be routed back to the
 welcome component. the routes are configured at `client/ts/app/routers.ts`.
 
+##- SSL Certificates
+
+I use GoDaddy SSL Certificate, that comes with a primary crt file, the server key file, and the bundle file sf_bundle-g2-g1.
+
+the docs says the following: `If the certificate is signed by a certificate authority, the certFile should be the concatenation of the server's certificate, any intermediates, and the CA's certificate.`
+
+so in my case all i needed to do is to append the bundle file to the main crt file.
+
+I checked the grade of the SSL Certificate using `https://www.ssllabs.com/ssltest/` and I got grade A.
+
+I did leave the directive `OtherCertificates` undeer the SslCert category of config.ini, just in case for some reason it needed to be loaded separately.
+
 # Tested
 
 this package was tested on a Mac Pro with OS X El Capitan 10.11.5, using nodejs 6.2.2 (installed with nvm) and go 1.7beta2.
