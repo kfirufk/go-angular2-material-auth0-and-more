@@ -23,7 +23,6 @@ func init() {
 	}
 
 	TlsConfig = &tls.Config{
-		ClientAuth:   tls.RequireAndVerifyClientCert,
 		ClientCAs:    certpool,
 	}
 	TlsConfig.BuildNameToCertificate()
