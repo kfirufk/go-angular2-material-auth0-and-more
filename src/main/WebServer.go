@@ -15,7 +15,6 @@ import (
 
 var secureMiddleware *secure.Secure = secure.New(secure.Options{
 	IsDevelopment: !config.CfgIni.IsProduction,
-	AllowedHosts:          []string{config.CfgIni.ServerName},
 	SSLRedirect:           true,
 	SSLHost:               config.CfgIni.ServerName,
 	SSLProxyHeaders:       map[string]string{"X-Forwarded-Proto": "https"},
