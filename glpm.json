@@ -1,0 +1,10 @@
+{
+    "packages": [
+        "github.com/go-ini/ini",
+        "github.com/gorilla/mux",
+        "github.com/jingweno/negroni-gorelic",
+        "github.com/phyber/negroni-gzip/gzip",
+        "github.com/unrolled/secure",
+        "github.com/urfave/negroni"
+    ]
+}
