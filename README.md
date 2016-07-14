@@ -113,7 +113,7 @@ so in my case all i needed to do is to append the bundle file to the main crt fi
 
 I checked the grade of the SSL Certificate using `https://www.ssllabs.com/ssltest/` and I got grade A.
 
-I did leave the directive `OtherCertificates` undeer the SslCert category of config.ini, just in case for some reason it needed to be loaded separately.
+I did leave the directive `OtherCertificates` under the SslCert category of config.ini, just in case for some reason it needed to be loaded separately.
 
 # Tested
 
