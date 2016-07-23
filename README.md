@@ -72,7 +72,7 @@ in general you have 3 categories in config.ini
 - `SslCert` - which contains the pem and key files locations to property start an HTTPS Server.
 - `NewRelic` - which includes the license key of your newrelic account and the application name that will appear on the dashboard
 - `WebServer` - which includes the https port to open, and finally the readn write timeouts for https requests.
-
+- `Auth0` - account domain (to configure secure package to allow login requests)
 ###- app.config.js
 
 please copy `config/app.config.js.defaults` to `config/app.config.js`, open it with your favorite text editor, and change it according to your configuration.  
