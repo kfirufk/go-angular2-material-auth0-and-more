@@ -20,10 +20,13 @@ type Server struct {
 	ServerName string
 }
 
+type Auth0 {
+	AccountDomain string
+}
+
 type NewRelic struct {
 	Licensekey string
 	AppName string
-	AccountDomain string
 }
 
 type WebServer struct {
@@ -36,6 +39,7 @@ type ConfigIni struct {
 	SslCert
 	Server
 	NewRelic
+	Auth0
 	WebServer
 }
 
