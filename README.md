@@ -13,12 +13,12 @@ included go features:
 
 included javascript features:
 
-angular2 rc3
+* angular2 rc4
 * angular2 router 3.0.0-beta.2
-* angular2-material 2.0.0-alpha.6
+* angular2-material 2.0.0-alpha.6-2
 * typescript
 * webpack
-* auth0 - auth0lock 10.0.0-rc.1
+* auth0 - auth0lock 10.0.0-rc.2
 * tslint
 * codelyzer
 * Google Material Icons
@@ -36,7 +36,13 @@ welp, first you need to have Go Installed :) then you need to use go to download
 - github.com/unrolled/secure
 - github.com/gorilla/mux
 
-just execute `go get <MODULE_NAME>` on each package in the list.
+
+### 3 ways to install packages:
+
+1. just execute `go get <MODULE_NAME>` on each package in the list.
+2. execute `go get ./...` on the root of the project
+3. I included glpm.json file (https://github.com/kfirufk/glpm), so if you want to use this package manager, 
+install it with `go get -u github.com/kfirufk/glpm`, and then type `glpm -install` in the root directory of your project.
 
 ### building client (javascript) related packages
 
@@ -107,7 +113,7 @@ so in my case all i needed to do is to append the bundle file to the main crt fi
 
 I checked the grade of the SSL Certificate using `https://www.ssllabs.com/ssltest/` and I got grade A.
 
-I did leave the directive `OtherCertificates` undeer the SslCert category of config.ini, just in case for some reason it needed to be loaded separately.
+I did leave the directive `OtherCertificates` under the SslCert category of config.ini, just in case for some reason it needed to be loaded separately.
 
 # Tested
 
