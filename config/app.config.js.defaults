@@ -2,13 +2,13 @@
  * Created by ufk on 29/06/2016.
  */
 
-module.exports = {
+module.exports =  {
     webServer: {
-        appBaseHref : "/"
+        appBaseHref : JSON.stringify("/")
     },
     auth0: {
-        apiKey: "<API_KEY>",
-        domain: "<DOMAIN>",
-        callbackUrl: "<CALLBACK_URL>"
+        apiKey: JSON.stringify("API_KEY"),
+        domain: JSON.stringify("DOMAIN.auth0.com"),
+        callbackUrl: JSON.stringify("CALLBACK_URL")
     }
 };
