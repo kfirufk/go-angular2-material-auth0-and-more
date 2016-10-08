@@ -13,12 +13,12 @@ included go features:
 
 included javascript features:
 
-* angular2 rc4
-* angular2 router 3.0.0-beta.2
-* angular2-material 2.0.0-alpha.6-2
-* typescript
-* webpack
-* auth0 - auth0lock 10.0.0-rc.2
+* angular2 2.1.0-rc.0
+* angular2 router 3.0.2
+* angular2 material 2.0.0-alpha.9-experimental-pizza
+* typescript 2.0.3
+* webpack 2.1.0-beta.25
+* auth0 - auth0lock 10.4.0
 * tslint
 * codelyzer
 * Google Material Icons
@@ -117,6 +117,6 @@ I did leave the directive `OtherCertificates` under the SslCert category of conf
 
 # Tested
 
-this package was tested on a Mac Pro with OS X El Capitan 10.11.5, using nodejs 6.2.2 (installed with nvm) and go 1.7beta2.
+this package was tested on a macbook pro  with macOS Sierra, using nodejs 6.7.0 (installed with nvm) and go 1.7.1 installed with homebrew.
 
 if for some reason you encounter problems with different versions of node or go, please let me know.

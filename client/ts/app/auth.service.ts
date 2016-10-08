@@ -23,8 +23,6 @@ export class Auth {
     }
 
     public login() {
-        console.info(APP_CONFIG.auth0.callbackUrl);
-        // Call the show method to display the widget.
         this.lock.show({
             callbackURL: APP_CONFIG.auth0.callbackUrl
         });

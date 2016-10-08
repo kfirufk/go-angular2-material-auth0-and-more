@@ -20,7 +20,7 @@ type Server struct {
 	ServerName string
 }
 
-type Auth0 {
+type Auth0 struct {
 	AccountDomain string
 }
 
