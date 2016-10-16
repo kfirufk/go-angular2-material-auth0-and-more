@@ -1,3 +1,8 @@
+# DEPRECATED
+
+after some wonderful usrs comments, 
+this project is deprecated in favor of https://github.com/tuxin-skeleton
+
 # go-angular2-material-auth0-and-more
 
 this is a starter kit i was missing when I first started to learn go.
