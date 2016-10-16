@@ -1,6 +1,6 @@
 # DEPRECATED
 
-after some wonderful usrs comments, 
+after some wonderful users comments, 
 this project is deprecated in favor of https://github.com/tuxin-skeleton
 
 # go-angular2-material-auth0-and-more
